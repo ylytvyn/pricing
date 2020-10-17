@@ -1,1 +1,1 @@
-# Start in the separate branch
+Starting template in the separate branch
