@@ -1,0 +1,29 @@
+body {
+    background:  #9789f9;
+    font-family: 'BebasNeue', sans-serif;
+}
+
+.order__list {
+    font-family: 'Roboto', sans-serif;
+}
+
+.button {
+    background: #6fcffb;
+}
+
+.button:hover {
+    background: #9789f9;
+}
+
+.container {
+    margin: 50px auto;
+}
+
+.order {
+    float: left;
+    margin-right: 1.5%;
+}
+
+.order:last-child {
+    margin-right: 0;
+}
