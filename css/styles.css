@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fonts/BebasNeue/bebasneue_bold.eot');
+    src: url('fonts/BebasNeue/bebasneue_bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue/bebasneue_bold.woff2') format('woff2'),
+         url('fonts/BebasNeue/bebasneue_bold.woff') format('woff'),
+         url('fonts/BebasNeue/bebasneue_bold.ttf') format('truetype'),
+         url('fonts/BebasNeue/bebasneue_bold.svg#bebas_neuebold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fonts/BebasNeue/bebasneue_regular.eot');
+    src: url('fonts/BebasNeue/bebasneue_regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue/bebasneue_regular.woff2') format('woff2'),
+         url('fonts/BebasNeue/bebasneue_regular.woff') format('woff'),
+         url('fonts/BebasNeue/bebasneue_regular.ttf') format('truetype'),
+         url('fonts/BebasNeue/bebasneue_regular.svg#bebas_neueregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fonts/BebasNeue/bebasneue_thin.eot');
+    src: url('fonts/BebasNeue/bebasneue_thin.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue/bebasneue_thin.woff2') format('woff2'),
+         url('fonts/BebasNeue/bebasneue_thin.woff') format('woff'),
+         url('fonts/BebasNeue/bebasneue_thin.ttf') format('truetype'),
+         url('fonts/BebasNeue/bebasneue_thin.svg#bebas_neuethin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+:root {
+	--violet: #9789f9;
+	--orange: #fd8d7b;
+	--blue: #6fcffb;
+	--text: 'Roboto', sans-serif;
+	--title: 'BebasNeue', sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+/* Main Styles */
+body {
+    background: var(--violet);
+    font-family: var(--title);
+    color: #181818;
+}
+
+.container {
+    max-width: 1070px;
+    min-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.order {
+    background: #f5f4f9;
+    box-shadow: 5px 5px 60px 0 #7a6be7;
+    width: 30.8%;
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.order--main {
+    width: 34.5%;
+}
+
+.order__price {
+    font-weight: 100;
+    margin: 30px 0 15px;
+}
+
+.order--main .order__price {
+    margin-top: 40px;
+}
+
+.order__dollar {
+    font-size: 24px;
+    vertical-align: super;
+    position: relative;
+    top: -19px;
+}
+
+.order__count {
+    font-size: 60px;
+}
+
+.order__per-hour {
+    font-size: 16px;
+}
+
+.order__title {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.order__block {
+    background: #fff;
+    padding: 65px 20px 55px;
+    border-radius: 40% 40% 0 0;
+    position: relative;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.order--main .icon {
+    width: 40px;
+    height: 40px;
+}
+
+.order__list {
+    margin-top: 35px;
+    font: 16px var(--text);
+}
+
+.order__item {
+    margin-bottom: 35px;
+}
+
+.order__item:last-child {
+    margin-bottom: 0;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 18px;
+    background: var(--blue);
+    color: #fff;
+    padding: 15px 45px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    transition: all .3s;
+}
+
+.button:hover {
+    background: var(--violet);
+    box-shadow: 0 0 10px 0 #7a6be7;
+}
+
+/* IE10+ */
+@media screen and (-ms-high-contrast: active), 
+(-ms-high-contrast: none) {  
+    
+    body {
+        background:  #9789f9;
+        font-family: 'BebasNeue', sans-serif;
+    }
+
+    .order__list {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .button {
+        background: #6fcffb;
+    }
+
+    .button:hover {
+        background: #9789f9;
+    }
+
+    .container {
+        margin: 50px auto;
+    }
+}
